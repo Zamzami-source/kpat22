@@ -14,6 +14,7 @@ class ProdiController extends Controller
 
         $nama = "RPL";
 
+        //Data Prodi
         $prodis = [
             'ILKOM', 'TI', 'RPL', 'HUKUM', 'FARMASI'
         ];
