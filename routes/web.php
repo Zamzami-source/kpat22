@@ -26,4 +26,9 @@ Route::get('/mahasiswa', function() {
 Route::get('/prodi/all', [ProdiController::class, 'index']);
 
 
+//view langsung
 Route::view('viewmhs', 'welcome');
+
+
+//view portofolio
+Route::view('portofolio', 'portofolio.cv');
