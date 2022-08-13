@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdiController;
+use App\Http\Controllers\DosenController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,8 @@ Route::view('viewmhs', 'welcome');
 
 //view portofolio
 Route::view('portofolio', 'portofolio.cv');
+
+
+
+//CRUD Data
+Route::get('dosen', [DosenController::class, 'index']);
