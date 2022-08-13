@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdiController;
-use App\Http\Controllers\DosenController;
+use App\Http\Controllers\SoalController;
 
 
 /*
@@ -38,4 +38,8 @@ Route::view('portofolio', 'portofolio.cv');
 
 
 //CRUD Data
-Route::get('dosen', [DosenController::class, 'index']);
+Route::get('soal', [SoalController::class, 'index']);
+
+Route::get('soal.add', [SoalController::class, 'create'])->name('soal.add');
+
+Route::post('soal.save', [SoalController::class, 'save'])->name('soal.save');
