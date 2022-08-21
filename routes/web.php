@@ -43,3 +43,10 @@ Route::get('soal', [SoalController::class, 'index']);
 Route::get('soal.add', [SoalController::class, 'create'])->name('soal.add');
 
 Route::post('soal.save', [SoalController::class, 'save'])->name('soal.save');
+
+Route::delete('soal.delete/{id}', [SoalController::class, 'destroy'])->name('soal.delete');
+
+Route::get('soal.edit/{soal}', [SoalController::class, 'edit'])->name('soal.edit');
+
+Route::patch('soal.update/{soal}', [SoalController::class, 'update'])->name('soal.update');
+
